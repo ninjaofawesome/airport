@@ -1,3 +1,101 @@
+
+
+
+# ZOMG, WTF, just use the time class and parse that shizz!
+# def gather_more_flights
+# 		puts "Were there other flights you were expecting with this airline previously? (y/n)"
+# 			answer = gets.chomp.downcase
+
+# 		while answer == "y"
+
+# 			puts "OK, lets do this again. When was that flight supposed to arrive? (hh:mm)(AM/PM)"
+# 				other_flight_eta = gets.chomp
+# 				debugger
+# 				converted_time = other_flight_eta.split(/(.*)\:(.*)(AM|PM|am|pm)/)
+# 				multi_flight_eta.push converted_time 
+
+# 			puts "And when did that plane ACTUALLY arrive? (hh:mm)(AM/PM)"
+# 				other_flight_arrival = gets.chomp
+# 				converted_time = other_flight_arrival.split(/(.*)\:(.*)(AM|PM|am|pm)/)
+# 				multi_flight_arrival.push converted_time 
+
+# 			puts "Any more flights? (y/n)"
+# 			answer = gets.chomp.downcase	
+
+# 		end	
+
+
+# Nested time conversion thingy.  Doesn't really work.
+
+# def work_with_arrays
+# 		multi_flight_eta.each do |array|
+# 			array.each do |string|
+# 				answer = string[1[0]].to_i #&& string[1[1]].to_i
+# 				debugger
+# 					puts "this is the #{answer}"
+# 			end
+# 		end
+# 	end
+
+# this will work in case your other stuff doesn't.
+
+# 	def gather_more_flights
+# 		puts "Were there other flights you were expecting with this airline previously? (y/n)"
+# 			answer = gets.chomp.downcase
+# 		while answer == "y"
+			
+			
+# 			puts "OK, lets do this again. When was that flight supposed to arrive? (hh:mm)(AM/PM)"
+# 				@other_flight_eta = gets.chomp
+# 				multi_flight_eta << @other_flight_eta
+
+# 			puts "And when did that plane ACTUALLY arrive? (hh:mm)(AM/PM)"
+# 				@other_flight_arrival = gets.chomp
+# 				multi_flight_arrival << @other_flight_arrival
+
+# 			puts "Any more flights? (y/n)"
+# 			answer = gets.chomp.downcase	
+
+# 		end	
+
+# 		"OK cool.  Let's crunch the numbers"
+# 	end
+
+
+
+# Working on something, scrapped this idea.
+
+# def initialize
+# 		@storage = [ ]
+# 	end
+
+# 	def get_times
+# 		puts "What time was the flight supposed to arrive? (hh:mm)(AM/PM)"
+# 			@first_flight = gets.chomp
+# 		puts "What time did the flight actually land? (hh:mm)(AM/PM)"
+# 		 	@first_arrival = gets.chomp
+# 		puts "Have you expected other flights from this airline previously?"
+# 	 		@answer = gets.chomp.downcase
+# 	 	puts "Any more flights? (y/n)"
+# 			@more_flights = gets.chomp.downcase
+# 	end
+
+# 	def time_conversion
+# 		time_1 = @first_flight.split(/(.*)\:(.*)(AM|PM|am|pm)/)
+# 		# time_1.inspect
+# 		hours = time_1[1].to_i
+# 		minutes = time_1[2].to_i
+# 			if time_1[3] == "pm" && hours <=11 
+# 					military_time = hours + 12	
+# 			end
+# 		new_time = "#{military_time}" + ":" + "#{minutes}"
+# 		@arrival = Time.parse(new_time)	
+# 	end
+
+	
+
+
+
 # very wet code, but works for regular time.
 
 # require 'debugger'
