@@ -1,5 +1,3 @@
-require 'debugger'
-
 require 'Time'
 
 class Airport

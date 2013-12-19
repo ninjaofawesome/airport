@@ -15,3 +15,5 @@ This airport program has multiple versions, all which work.  They are:
 
 2. THE LESS NASTY AIRPORT VERSION (military_airport.rb) Not only refactored, but refactored 
 
+3 THE SLICK STANDARD TIME AIRPORT VERSION (standard_airport.rb) Finally, I used time parsing.  So much nicer.
+
